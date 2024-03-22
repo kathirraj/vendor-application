@@ -1,0 +1,18 @@
+{
+ "content": null,
+ "creation": "2024-01-11 18:52:34.465191",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2024-01-11 18:52:34.465191",
+ "modified_by": "Administrator",
+ "module": "Vendor Application",
+ "name": "my_list",
+ "owner": "Administrator",
+ "page_name": "my_list",
+ "roles": [],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0
+}

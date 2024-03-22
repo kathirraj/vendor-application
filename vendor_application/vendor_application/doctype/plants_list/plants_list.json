@@ -1,0 +1,201 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-09-08 19:15:49.867688",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plants_detail_section",
+  "naming_series",
+  "plant_code",
+  "plant_locaion",
+  "plant_gstin",
+  "address",
+  "city",
+  "conatct",
+  "column_break_cnp5v",
+  "plant_name",
+  "plant_adress",
+  "plant_pan_number",
+  "state",
+  "country",
+  "plant_status",
+  "company_details_section",
+  "compaany",
+  "column_break_y40cs",
+  "company_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "plants_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Plants Detail"
+  },
+  {
+   "bold": 1,
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "no_copy": 1,
+   "options": "PLANT-.YY.-",
+   "print_hide": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "plant_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Plant Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "plant_locaion",
+   "fieldtype": "Data",
+   "label": "Plant Phone Number",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "plant_gstin",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Plant GSTIN",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Plant Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "conatct",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_cnp5v",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plant_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Plant Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "plant_adress",
+   "fieldtype": "Data",
+   "label": "Plant Email"
+  },
+  {
+   "fieldname": "plant_pan_number",
+   "fieldtype": "Data",
+   "label": "Plant PAN Number"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "State",
+   "reqd": 1
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "plant_status",
+   "fieldtype": "Select",
+   "label": "Plant Status",
+   "options": "Active\nInactive",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_details_section",
+   "fieldtype": "Section Break",
+   "label": "Company Details"
+  },
+  {
+   "bold": 1,
+   "fieldname": "compaany",
+   "fieldtype": "Link",
+   "label": "Company Code",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_y40cs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "depends_on": "compaany",
+   "fetch_from": "compaany.company_name",
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-04 10:52:56.367455",
+ "modified_by": "Administrator",
+ "module": "Vendor Application",
+ "name": "Plants List",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Admin Level 1",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Admin Level 2",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Admin Level 3",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

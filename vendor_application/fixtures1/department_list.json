@@ -1,0 +1,18 @@
+[
+ {
+  "company_code": "MAZE-1001",
+  "company_name": "MAZEWORKSSOLUTIONS",
+  "department_code": "5100-A2",
+  "department_contact_no": "8976456789",
+  "department_description": "Production Medium Stamping Cell",
+  "department_email": "prd.chn@nashindia.com",
+  "department_name": "Production - MSC",
+  "department_status": "Active",
+  "docstatus": 0,
+  "doctype": "Department List",
+  "modified": "2023-09-12 15:28:56.026477",
+  "name": "5100-A2",
+  "plant": "PLANT-23-00001",
+  "plant_name": "NASH"
+ }
+]

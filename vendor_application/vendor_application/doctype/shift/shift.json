@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "autoname": "field:shift_code",
+ "creation": "2023-09-14 15:29:53.192098",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "shift_details_section",
+  "shift_code",
+  "shift_incharge",
+  "shift_start_time",
+  "column_break_s78qc",
+  "shift_name",
+  "shift_end_time",
+  "shift_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "shift_details_section",
+   "fieldtype": "Section Break",
+   "label": "Shift Details"
+  },
+  {
+   "fieldname": "shift_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Shift Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "shift_name",
+   "fieldtype": "Data",
+   "label": "Shift Name"
+  },
+  {
+   "fieldname": "column_break_s78qc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shift_start_time",
+   "fieldtype": "Time",
+   "label": "Shift Start Time"
+  },
+  {
+   "fieldname": "shift_end_time",
+   "fieldtype": "Time",
+   "label": "Shift End Time"
+  },
+  {
+   "fieldname": "shift_status",
+   "fieldtype": "Select",
+   "label": "Shift Status",
+   "options": "Active\nInactive"
+  },
+  {
+   "fieldname": "shift_incharge",
+   "fieldtype": "Data",
+   "label": "Shift Incharge",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-14 17:36:54.218647",
+ "modified_by": "Administrator",
+ "module": "Vendor Application",
+ "name": "Shift",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Admin Level 1",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Admin Level 2",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Admin Level 3",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

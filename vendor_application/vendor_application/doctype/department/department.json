@@ -1,0 +1,159 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:department_code",
+ "creation": "2023-09-09 10:26:52.922373",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "department_details_section",
+  "department_code",
+  "department_contact_no",
+  "department_email",
+  "department_status",
+  "column_break_ilhug",
+  "department_name",
+  "department_description",
+  "section_break_xhwef",
+  "plant",
+  "company_code",
+  "column_break_kp2rm",
+  "plant_name",
+  "company_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "department_details_section",
+   "fieldtype": "Section Break",
+   "label": "Department Details"
+  },
+  {
+   "fieldname": "department_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Department Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "department_contact_no",
+   "fieldtype": "Data",
+   "label": "Department Contact No"
+  },
+  {
+   "fieldname": "department_email",
+   "fieldtype": "Data",
+   "label": "Department Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "department_status",
+   "fieldtype": "Select",
+   "label": "Department Status",
+   "options": "Active\nInactive",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ilhug",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department_name",
+   "fieldtype": "Data",
+   "label": "Department Name"
+  },
+  {
+   "fieldname": "department_description",
+   "fieldtype": "Small Text",
+   "label": "Department Description"
+  },
+  {
+   "fieldname": "section_break_xhwef",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "plant",
+   "fieldtype": "Link",
+   "label": "Plant",
+   "options": "Plants List",
+   "reqd": 1
+  },
+  {
+   "bold": 1,
+   "fetch_from": "plant.compaany",
+   "fieldname": "company_code",
+   "fieldtype": "Data",
+   "label": "Company Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_kp2rm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fetch_from": "plant.plant_name",
+   "fieldname": "plant_name",
+   "fieldtype": "Data",
+   "label": "Plant Name",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fetch_from": "plant.company_name",
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-14 17:35:46.745831",
+ "modified_by": "Administrator",
+ "module": "Vendor Application",
+ "name": "Department",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Admin Level 1",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Admin Level 2",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Admin Level 3",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

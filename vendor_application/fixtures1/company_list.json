@@ -1,0 +1,21 @@
+[
+ {
+  "address": "NO 66,28TH THILLAIGANGA NAGAR",
+  "address_line_2": null,
+  "city_town": "CHENNAI",
+  "company_code": "MAZE-1001",
+  "company_gstin": "33AALCM3158P1Z2",
+  "company_name": "MAZEWORKSSOLUTIONS",
+  "company_status": "Active",
+  "country": "India",
+  "currency": "INR",
+  "docstatus": 0,
+  "doctype": "Company List",
+  "email_address": "maze@gamil.com",
+  "modified": "2023-09-12 15:20:43.158614",
+  "name": "MAZE-1001",
+  "pan_number": "AALCM3158P",
+  "phone_number": " 9034569054",
+  "state": "TAMIL NADU"
+ }
+]

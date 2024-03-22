@@ -1,0 +1,427 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2023-09-02 18:11:43.661360",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "details_tab",
+  "naming_series",
+  "vendor_name",
+  "column_break_mbpci",
+  "nature_of_vendor",
+  "date_of_incorporation",
+  "section_break_fc0fw",
+  "materials",
+  "contact_details_tab",
+  "contact_section",
+  "contact_person",
+  "column_break_v518g",
+  "email_address",
+  "telephone_no",
+  "fax_no",
+  "address_section",
+  "address_line_1",
+  "city",
+  "pin_code",
+  "column_break_oz0ar",
+  "address_line_2",
+  "state",
+  "country",
+  "payments_tab",
+  "bank_details_section",
+  "name_of_bank",
+  "branch",
+  "bene_id",
+  "column_break_a7kbw",
+  "account_number",
+  "swift_code",
+  "ifsc_code",
+  "section_break_0ckzn",
+  "gstin_no",
+  "column_break_io2jk",
+  "pan_no",
+  "payment_terms_section",
+  "credit_period",
+  "column_break_723xy",
+  "currency",
+  "amended_from",
+  "msme_details",
+  "msme_registered_1",
+  "msme_reg",
+  "registered",
+  "copy_of_certificate_enclosed",
+  "itr_filing_details_section",
+  "financial_year",
+  "required_date",
+  "kyc_details",
+  "column_break_h4asg",
+  "last_financial_year",
+  "date"
+ ],
+ "fields": [
+  {
+   "fieldname": "details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Vendor Details"
+  },
+  {
+   "bold": 1,
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "no_copy": 1,
+   "options": "VEN-.YY.-",
+   "print_hide": 1,
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "vendor_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Vendor Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_mbpci",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nature_of_vendor",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Nature Of Vendor",
+   "options": "\nMANUFACTURE\nREGISTERED DEALER\nSERVICE PROVIDER OTHERS"
+  },
+  {
+   "fieldname": "date_of_incorporation",
+   "fieldtype": "Date",
+   "label": "Date of Incorporation"
+  },
+  {
+   "fieldname": "section_break_fc0fw",
+   "fieldtype": "Section Break",
+   "label": "Particulars of Material"
+  },
+  {
+   "fieldname": "materials",
+   "fieldtype": "Table",
+   "label": "Particulars of Material",
+   "options": "Material"
+  },
+  {
+   "fieldname": "contact_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Contact & Addres"
+  },
+  {
+   "fieldname": "contact_section",
+   "fieldtype": "Section Break",
+   "label": "Contact "
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Data",
+   "label": "Contact Person",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_v518g",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email Address",
+   "options": "Email"
+  },
+  {
+   "fieldname": "telephone_no",
+   "fieldtype": "Data",
+   "label": "Telephone Number"
+  },
+  {
+   "fieldname": "fax_no",
+   "fieldtype": "Data",
+   "label": "FAX No"
+  },
+  {
+   "fieldname": "address_section",
+   "fieldtype": "Section Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "address_line_1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Address Line 1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "City/Town",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pin_code",
+   "fieldtype": "Data",
+   "label": "Postal Code"
+  },
+  {
+   "fieldname": "column_break_oz0ar",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address_line_2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "payments_tab",
+   "fieldtype": "Tab Break",
+   "label": "Bank & Payments"
+  },
+  {
+   "fieldname": "bank_details_section",
+   "fieldtype": "Section Break",
+   "label": "Bank Details"
+  },
+  {
+   "fieldname": "name_of_bank",
+   "fieldtype": "Link",
+   "label": "Name of Bank",
+   "options": "Bank List"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "label": "Branch"
+  },
+  {
+   "fieldname": "column_break_a7kbw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "account_number",
+   "fieldtype": "Data",
+   "label": "Account Number"
+  },
+  {
+   "fieldname": "swift_code",
+   "fieldtype": "Data",
+   "label": "Swift Code"
+  },
+  {
+   "fieldname": "ifsc_code",
+   "fieldtype": "Data",
+   "label": "IFSC Code"
+  },
+  {
+   "fieldname": "section_break_0ckzn",
+   "fieldtype": "Section Break",
+   "label": "GST Registration"
+  },
+  {
+   "fieldname": "gstin_no",
+   "fieldtype": "Data",
+   "label": "GSTIN Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_io2jk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pan_no",
+   "fieldtype": "Data",
+   "label": "PAN Number"
+  },
+  {
+   "fieldname": "payment_terms_section",
+   "fieldtype": "Section Break",
+   "label": "Payment Terms"
+  },
+  {
+   "fieldname": "credit_period",
+   "fieldtype": "Data",
+   "label": "Credit Period"
+  },
+  {
+   "fieldname": "column_break_723xy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Vendor Form",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "msme_details",
+   "fieldtype": "Tab Break",
+   "label": "MSME Details"
+  },
+  {
+   "default": "0",
+   "fieldname": "msme_registered_1",
+   "fieldtype": "Section Break",
+   "label": "MSME Registered"
+  },
+  {
+   "fieldname": "msme_reg",
+   "fieldtype": "Select",
+   "label": "MSME Registered",
+   "options": "\nYES\nNO"
+  },
+  {
+   "depends_on": "msme_reg",
+   "fieldname": "registered",
+   "fieldtype": "Select",
+   "label": "Registered",
+   "options": "\nIF REGISTERED\nREGISTER NUMBER"
+  },
+  {
+   "depends_on": "msme_reg",
+   "fieldname": "copy_of_certificate_enclosed",
+   "fieldtype": "Data",
+   "label": "Copy of Certificate"
+  },
+  {
+   "fieldname": "itr_filing_details_section",
+   "fieldtype": "Tab Break",
+   "label": "KYC & Other Documents"
+  },
+  {
+   "default": "F Y 2020-21 (A Y 2021-22)",
+   "fieldname": "financial_year",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Current Financial Year",
+   "options": "\n"
+  },
+  {
+   "fieldname": "required_date",
+   "fieldtype": "Date",
+   "label": "Required Date"
+  },
+  {
+   "fieldname": "column_break_h4asg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "F Y 2021-22 (A Y 2022-23)",
+   "fieldname": "last_financial_year",
+   "fieldtype": "Data",
+   "label": "Last Financial Year"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Valid Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bene_id",
+   "fieldtype": "Data",
+   "label": "Bene ID"
+  },
+  {
+   "fieldname": "kyc_details",
+   "fieldtype": "Table",
+   "label": " KYC details",
+   "options": "KYC details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-03-11 13:10:15.591301",
+ "modified_by": "Administrator",
+ "module": "Vendor Application",
+ "name": "Vendor Form",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Admin Level 1",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Admin Level 2",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Admin Level 3",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include vendor_application *.css
+recursive-include vendor_application *.csv
+recursive-include vendor_application *.html
+recursive-include vendor_application *.ico
+recursive-include vendor_application *.js
+recursive-include vendor_application *.json
+recursive-include vendor_application *.md
+recursive-include vendor_application *.png
+recursive-include vendor_application *.py
+recursive-include vendor_application *.svg
+recursive-include vendor_application *.txt
+recursive-exclude vendor_application *.pyc
